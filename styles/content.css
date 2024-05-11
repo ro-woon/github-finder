@@ -1,0 +1,274 @@
+.container {
+    height: 70%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: scale 0.5s ease-out;
+    position: relative;
+}
+
+.container:hover {
+    scale: 1.05;
+}
+
+#finder-container {
+    width: 22%;
+    position: relative;
+}
+
+#profile-container {
+    width: 65%;
+    position: relative;
+}
+
+.inner-content {
+    padding: 30px;
+}
+
+.span-buttons span{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.span-buttons span:nth-child(1){
+    background-color: #F54B4C;
+}
+
+.span-buttons span:nth-child(2){
+    background-color: #FEBF02;
+}
+
+.span-buttons span:nth-child(3){
+    background-color: #98D474;
+}
+
+.body-search-user{
+    margin-top: 80px;
+    position: relative;
+}
+
+.body-search-user h1, p{
+    text-align: center;
+}
+
+.body-search-user h1{
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    color: #404040;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.body-search-user p{
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.body-search-user input, .body-search-user button {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.body-search-user input{
+    background-color: #ECECEC;
+    margin-bottom: 17px;
+    margin-top: 17px;
+    padding-left: 20px ;
+}
+
+.body-search-user button {
+    background-color: #272727;
+    color: #BFBFBF;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.body-search-user button:hover {
+    background-color: #515151;
+}
+
+.body-search-user button p{
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.footer-search-user{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 90px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.user-first-info{
+    margin-top: 5px;
+}
+
+.grid-first-info{
+    color: #3D3D3D;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.right-text {
+    text-align: left;
+    margin-left: -10px;
+}
+
+.right-text p {
+    padding: 0;
+    text-align: left;
+    margin-bottom: 7px;
+    font-size: 12px;
+    color: #757575;
+}
+
+.grid-first-info img{
+    object-fit: cover;
+    width: 133px;
+    height: 170px;
+    border-radius: 10px;
+    border: 0.1px solid #484848;
+}
+
+.grid-first-info img:hover {
+    box-shadow: 4px 5px 46px #006eff71;
+}
+
+.grid-stats{
+    margin-top: 15px;
+    padding: 7px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.grid-stats div p:nth-child(1){
+    font-size: 22px;
+    font-family: poppins-semibold;
+    color: #1E1E1E;
+}
+
+.grid-stats div p:nth-child(2){
+    margin-top: -5px;
+    font-size: 10px;
+    font-family: poppins-medium;
+    color: #8B8B8B;
+}
+
+.lastest-repositories{
+    margin-left: 50px;
+}
+
+.lastest-repositories h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.respositories{
+    margin-top: 20px;
+    width: 600px;
+}
+
+.box-repository{
+    width: 100%;
+    height: 37px;
+    margin-bottom: 17px;
+    background-color: grey;
+    border-radius: 10px;
+    color: #404040;
+    font-family: poppins-regular;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-repository:nth-child(n){
+    background-color: #ededed;
+}
+
+
+.box-repository a{
+    line-height: 37px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #404040;
+    display: block;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.repo-stats {
+    margin-right: 20px;
+    color: #404040;
+    font-size: 12px;
+    
+}
+
+.box-repository span{
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+#top-content {
+    display: flex;
+}
+
+#user_name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1E1E1E;
+    margin-bottom: 10px;
+}
+
+#spinner {
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+
+.spinner-border {
+    display: none;
+}
+
+#user-graph {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#white-board {
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    background-color: white !important;
+    z-index: 10;
+}
+
+#user-graph img {
+    width: 90%;
+    height: 90%;
+}
