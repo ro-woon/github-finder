@@ -21,8 +21,10 @@ input_btn.addEventListener("click", (e) => {
                 ui.showProfile(data.profile);
                 ui.showRepos(data.repos);
                 ui.showGraph(data.profile);
+                setTimeout (() => {
                 spinner.style.display = "none";
                 board.style.display = "none";
+                }, 1000);
             }
         }).catch(err => console.log(err));
         
