@@ -38,7 +38,7 @@ class UI {
             </div>
         </div>
     <div class="lastest-repositories">
-                <h3>Lastest Repositorios</h3>
+                <h3>Latest Repositories</h3>
                 <div class="respositories">
 
                 </div>
