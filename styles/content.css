@@ -264,7 +264,6 @@
     width: 95%;
     height: 90%;
     position: absolute;
-    background-color: white !important;
     z-index: 10;
 }
 
@@ -272,3 +271,15 @@
     width: 90%;
     height: 90%;
 }
+
+#main-content {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease-out;
+}
+
+
+

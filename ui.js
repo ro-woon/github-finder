@@ -1,7 +1,6 @@
 class UI {
     constructor() {
-        this.profile = document.querySelector("#profile-container .inner-content");
-        this.others = document.querySelector("#others-container .inner-content");
+        this.profile = document.getElementById("main-content");
     }
 
     showProfile(user) {
@@ -68,7 +67,11 @@ class UI {
     }
 
     showGraph (user) {
-        document.getElementById("user-graph").innerHTML = `<img src="https://ghchart.rshah.org/${user.login}" />`;
+        const img = document.createElement("img");
+        img.setAttribute("src", ""); 
+        img.setAttribute("lazy-src", `https://ghchart.rshah.org/${user.login}`);
+        document.getElementById("user-graph").appendChild(img);
+        return img;
     }
     
 }
